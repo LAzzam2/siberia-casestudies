@@ -1,0 +1,191 @@
+.account-header
+{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    align-self: center;
+
+    h2
+    {
+        margin-bottom: 10px;
+    }
+}
+
+.account-information
+{
+    width: 80%;
+
+    align-self: center;
+}
+
+.account-field
+{
+    margin-bottom: 40px;
+}
+
+.account-field-label
+{
+    font-size: 12px;
+
+    margin-bottom: 10px;
+    margin-left: 3px;
+
+    text-transform: uppercase;
+}
+
+.account-field-input-wrapper
+{
+    overflow: hidden;
+
+    height: 60px;
+    margin-right: 30px;
+    padding: 0 20px 0 20px;
+
+    transition: all .2s ease-out;
+
+    border: 1px solid #edede8;
+    border-radius: 6px;
+    background-color: #fcfcfa;
+    box-shadow: inset 0 2px 6px 0 rgba( 0, 0, 0, .04 );
+
+    flex-grow: 1;
+}
+
+.account-field-input
+{
+    font-family: 'Muli';
+    font-size: 14px;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.account-field-error
+{
+    font-size: 12px;
+
+    margin-bottom: 10px;
+    margin-left: 3px;
+
+    color: $red;
+}
+
+.account-save-button
+{
+    position: relative;
+
+    cursor: pointer;
+
+    .spinner
+    {
+        @include spinner-dots( rgba( #fff, 1 ) );
+    }
+}
+
+.button-loading
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: opacity .2s ease-in;
+
+    &.ng-hide
+    {
+        opacity: 0;
+    }
+}
+
+.button-text
+{
+    transition: all .2s ease-in;
+
+    &.ng-hide
+    {
+        transform: rotate( 25deg );
+
+        opacity: 0;
+    }
+}
+
+.account-save-submit
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+
+    opacity: 0;
+}
+
+.save-notification-wrapper
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    transition: all .4s ease-in;
+    transform: translate3d( 0, 0, 0 );
+
+    opacity: 1;
+
+    align-items: center;
+
+    &.ng-hide
+    {
+        transform: translate3d( 0, -80px, 0 );
+
+        opacity: 0;
+    }
+}
+
+.save-notification
+{
+    padding: 20px 30px 20px 30px;
+
+    color: $green;
+    border-right: 1px solid rgba( 0, 0, 0, .1 );
+    border-bottom: 1px solid rgba( 0, 0, 0, .1 );
+    border-left: 1px solid rgba( 0, 0, 0, .1 );
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 9px rgba( 0, 0, 0, .06 );
+}
+
+.empty-list
+{
+    font-size: 14px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    transition: all .3s ease;
+
+    color: rgba( 0, 0, 0, .3 );
+
+    align-items: center;
+    justify-content: center;
+
+    &.ng-hide
+    {
+        opacity: 0;
+    }
+}

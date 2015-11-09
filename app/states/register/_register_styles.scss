@@ -1,0 +1,36 @@
+// _register_style.scss
+
+.register-register-button
+{
+    margin-bottom: 50px;
+}
+
+.register-login-button
+{
+    margin-bottom: 30px;
+}
+
+.form-error
+{
+    font-size: 14px;
+
+    position: absolute;
+    top: 0;
+    left: 287px;
+
+    flex-direction: row;
+
+    width: 240px;
+    height: 70px;
+
+    color: $red;
+
+    align-items: center;
+}
+
+.registration-name,
+.registration-email,
+.registration-password
+{
+    width: 100%;
+}

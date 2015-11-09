@@ -1,0 +1,33 @@
+// _login_style.scss
+
+.login-app-sprout-logo
+{
+    width: 72px;
+    height: 152px;
+    margin-top: 54px;
+    margin-bottom: 54px;
+
+    cursor: pointer;
+
+    background-image: url( './images/sprout-logo.png' );
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    align-self: center;
+}
+
+.login-register-button
+{
+    margin-bottom: 30px;
+}
+
+.login-login-button
+{
+    margin-bottom: 50px;
+}
+
+.login-email,
+.login-password
+{
+    width: 100%;
+}

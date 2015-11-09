@@ -1,0 +1,43 @@
+@keyframes spinner
+{
+    0%
+    {
+        transform: rotate( 0deg );
+    }
+
+    100%
+    {
+        transform: rotate( 360deg );
+    }
+}
+
+@mixin spinner-dots( $color )
+{
+    box-shadow: $color 12px 0 0 0,
+    $color 8px 8px 0 0,
+    $color 0 12px 0 0,
+    $color -8px 8px 0 0,
+    $color -12px 0 0 0,
+    $color -8px -8px 0 0,
+    $color 0 -12px 0 0,
+    $color 8px -8px 0 0;
+}
+
+.spinner
+{
+    font-size: 10px;
+
+    overflow: hidden;
+
+    width: 5px;
+    height: 5px;
+    margin: 20px;
+
+    animation: spinner 1500ms infinite linear;
+    text-indent: 100%;
+
+    border-radius: .5em;
+
+    @include spinner-dots( rgba( #d9d9ce, .5 ) );
+    align-self: center;
+}
